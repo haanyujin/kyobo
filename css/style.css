@@ -161,8 +161,9 @@ nav{
 /* main */
 .main{
   height: 550px;
-  padding-top: 14.4%;
+  padding-top: 210px;
   background-color: #F7C1C1;
+  transition: all 0.5s;
 }
 .main_inner{
   position: relative;
@@ -209,7 +210,7 @@ nav{
 .sec1wrap{width: 1180px; margin: 0 auto;}
 .sec1wrap>h2{
   margin: 80px 0; 
-  color: #62A830; text-align: center;
+  color: #353F67; text-align: center;
   font-size: 35px;
 }
 .sec1wrap>h3{padding-left: 70px; margin-bottom: 10px;}
@@ -243,7 +244,7 @@ nav{
 .list_arrow>a.active{visibility: hidden;}
 
 .list_arrow i{font-size: 40px; color: #353F67;}
-  
+.list_arrow i:hover{color: #62A830;}  
   .new_list{
     /* margin-right: 50px; */
     position: relative;
@@ -254,6 +255,7 @@ nav{
   /* imgwrap */
   .new_list>.imgwrap{
     position: absolute; left: 51px; top: 30px;
+    z-index: 2;
     width: 198px; height: 291px;
     box-shadow: 5px 5px 5px #868b9b;
     overflow: hidden;
@@ -338,6 +340,7 @@ nav{
     color: white;
     background-color: #353F67;
   }
+  .best_list>li:first-child h4{background-color: #62A830;}
   .best3,.best5{justify-content: space-evenly;}
   .imgwrap2 img{width: 170px; height: 250px;}
   .textwrap2>a{font-size: 15px; font-weight:600;}
@@ -349,20 +352,19 @@ nav{
 
 /* sec3 */
 #sec3{
-  height: 280px;
+  padding: 60px 0; box-sizing: border-box;
   background-color: rgb(240, 240, 240);
 }
 .sec3wrap{
-  padding: 40px 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
-.evt_text{padding: 0 60px; font-size: 18px;}
+.evt_text{padding: 0 60px; font-size: 22px;}
 .evt_text h3{margin-bottom: 20px; }
 .evt_text span{color: red;}
 .evt_img{
-  width: 200px; height: 200px;
+  width: 240px; height: 240px;
   border-radius: 50%;
   overflow: hidden;
   background-color: rgb(255, 255, 255);
@@ -376,7 +378,7 @@ nav{
   padding: 15px 0;
   font-size: 20px; font-weight: 600;
   text-align: center;
-  background-color: rgba(53, 63, 103, 0.199);
+  background-color: rgb(153, 159, 179);
 }
   /* .evt_click p{} */
   .evt_click a{
@@ -470,7 +472,7 @@ nav{
     opacity: 1;
   }
   /* btm_conts */
-  .btm_conts{padding-bottom: 60px;}
+  .btm_conts{padding:60px 0;}
   .onlywrap{
     display: flex;
     justify-content: space-between;
